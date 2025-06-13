@@ -18,22 +18,22 @@
 
 ## 界面展示：
 <div style="display: flex;gap:10px">
-<img src="./resImg/功能合集.jpg" alt="功能合集" style="width: 100px;" /> 
-<img src="./resImg/主界面展示.jpg" alt="主界面展示" style="width: 100px;" />
+<img src="./resImg/功能合集.jpg" alt="功能合集" style="width: 200px;" /> 
+<img src="./resImg/主界面展示.jpg" alt="主界面展示" style="width: 200px;" />
 </div>
                          
 
 
-
+<br/>
 
 <div style="display: flex;gap:10px">
-<img src="./resImg/添加界面.jpg" alt="添加界面" style="width: 100px;" />
-<img src="./resImg/修改界面.jpg" alt="修改界面" style="width: 100px;" />
+<img src="./resImg/添加界面.jpg" alt="添加界面" style="width: 200px;" />
+<img src="./resImg/修改界面.jpg" alt="修改界面" style="width: 200px;" />
 </div>
                             
-
+<br/>
 <div style="display: flex;gap:10px">
-<img src="./resImg/女性界面图.jpg" alt="女性界面图" style="width: 100px;"/>               
+<img src="./resImg/女性界面图.jpg" alt="女性界面图" style="width: 200px;"/>               
 <img src="./resImg/桌面图标.jpg" alt="桌面图标"/>
 </div>
 
