@@ -17,19 +17,25 @@
 * 对人员名字，电话，性别，备注进行编辑，重新保存。
 
 ## 界面展示：
-
-<img src="./resImg/功能合集.jpg" alt="功能合集" style="zoom:25%;" />                          <img src="./resImg/主界面展示.jpg" alt="主界面展示" style="zoom:25%;" />
-
-
-
-
-
-<img src="./resImg/添加界面.jpg" alt="添加界面" style="zoom:25%;" />                            <img src="./resImg/修改界面.jpg" alt="修改界面" style="zoom:25%;" />
+<div style="display: flex;gap:10px">
+<img src="./resImg/功能合集.jpg" alt="功能合集" style="zoom:25%;" /> 
+<img src="./resImg/主界面展示.jpg" alt="主界面展示" style="zoom:25%;" />
+</div>
+                         
 
 
 
-<img src="./resImg/女性界面图.jpg" alt="女性界面图" style="zoom:25%;" />                <img src="./resImg/桌面图标.jpg" alt="桌面图标"/>
 
+<div style="display: flex;gap:10px">
+<img src="./resImg/添加界面.jpg" alt="添加界面" style="zoom:25%;" />
+<img src="./resImg/修改界面.jpg" alt="修改界面" style="zoom:25%;" />
+</div>
+                            
+
+<div style="display: flex;gap:10px">
+<img src="./resImg/女性界面图.jpg" alt="女性界面图" style="zoom:25%;"/>               
+<img src="./resImg/桌面图标.jpg" alt="桌面图标"/>
+</div>
 
 
 
@@ -62,3 +68,5 @@ public class ApiInfo {
 将`Apikey_phone`、`urlSetKey`、`WeatherKey`改成你自己的key之后
 
 恭喜你，可以启动项目了（一般不出问题就要出问题）。
+
+具体可联系：siestajiong@gmail.com
