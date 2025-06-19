@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/detail_bg"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:background="#79bbff"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/detail_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/man"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:paddingRight="20dp">
+
+        <!-- 左侧电话号码和归属地布局 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/phone_Located"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="江苏南京 - 移动"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- 右侧功能图标区域 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/detail_call"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/d_phone"
+                android:contentDescription="拨打电话"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/detail_video"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/d_video"
+                android:contentDescription="视频通话"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/detail_message"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/d_message"
+                android:contentDescription="发送消息"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--性别-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/detail_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别：女"
+            android:textSize="26sp"
+            android:textColor="#3E3E3E"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+   <!--职位-->
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/detail_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南京工业大学"
+            android:textColor="#737272"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <!--    底部菜单-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返回"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:paddingVertical="12dp"/>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="编辑"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:paddingVertical="12dp"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:paddingVertical="12dp"/>
+    </LinearLayout>
+</LinearLayout>

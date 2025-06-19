@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="5dp"
+    >
+    <!--  顶部  -->
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <!-- 左边部分：显示通讯录文本 -->
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="通讯录"
+            android:textSize="30sp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <!-- 中间部分：动态显示图片和文字 -->
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_middle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="中间图片" />
+
+            <TextView
+                android:id="@+id/tv_middle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="晴天"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- 右边部分：显示加号图标 -->
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:contentDescription="添加图标"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/search_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索姓名或电话号码"
+        android:background="@drawable/search_edit_bg"
+        android:padding="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/top"
+        android:drawableLeft="@drawable/search"/>
+
+    <ListView
+        android:id="@+id/book_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_id"
+        android:divider="#000000"/>
+</RelativeLayout>

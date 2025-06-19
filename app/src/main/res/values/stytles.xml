@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item> <!-- 加粗 -->
+        <item name="android:textSize">30sp</item>  <!-- 字体大小 -->
+        <item name="android:textColor">@color/black</item> <!-- 文字颜色 -->
+    </style>
+</resources>
